@@ -8,9 +8,9 @@ public abstract class Herbivore extends Animal {
     @Override
     public void eat(Food food) {
         if (food instanceof PlantFood) {
-            System.out.println("ммм... Сочная травка");
+            System.out.println("Я " + name + " и я люблю сочную травку");
         }else {
-            System.out.println("Я не ем мяса");
+            System.out.println("Я " + name + " и я кушаю только травку");
         }
     }
 }

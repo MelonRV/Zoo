@@ -10,7 +10,7 @@ public class Zoo {
     public static void main(String[] args) {
 
         Zoo zoo = new Zoo();
-        Aviary herbivoreAviary = new Aviary(6);
+        Aviary herbivoreAviary = new Aviary(8);
         herbivoreAviary.addAnimal(new Cow());
         herbivoreAviary.addAnimal(new Cow());
         herbivoreAviary.addAnimal(new Cow());
@@ -18,11 +18,8 @@ public class Zoo {
         herbivoreAviary.addAnimal(new Cow());
         herbivoreAviary.addAnimal(new Cow());
         herbivoreAviary.addAnimal(new Cow());
-        herbivoreAviary.addAnimal(new Cow());
-        herbivoreAviary.addAnimal(new Cow());
-        herbivoreAviary.addAnimal(new Cow());
-
         zoo.addAviary(herbivoreAviary);
+
         Aviary carnivoriusAviary = new Aviary(6);
         carnivoriusAviary.addAnimal(new Bear());
         carnivoriusAviary.addAnimal(new Lion());
@@ -31,8 +28,8 @@ public class Zoo {
         carnivoriusAviary.addAnimal(new Duck());
         carnivoriusAviary.addAnimal(new Giraffe());
         zoo.addAviary(carnivoriusAviary);
-        Aviary carnivoriusAviary2 = new Aviary(6);
-        carnivoriusAviary2.addAnimal(new Rabbit());
+
+        Aviary carnivoriusAviary2 = new Aviary(4);
         carnivoriusAviary2.addAnimal(new Rabbit());
         carnivoriusAviary2.addAnimal(new Rabbit());
         carnivoriusAviary2.addAnimal(new Rabbit());
@@ -40,11 +37,13 @@ public class Zoo {
         carnivoriusAviary2.addAnimal(new Giraffe());
         zoo.addAviary(carnivoriusAviary2);
 
+
+
         for (Aviary aviary : zoo.getAviarys()) {
             for (Animal animal : aviary.getAnimals()) {
                 animal.eat(new Chicken());
+                }
 
-            }
         }
 
 

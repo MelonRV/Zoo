@@ -16,7 +16,7 @@ public  class Aviary {
         if (aviary.size() < maxAnimals){
             aviary.add(animal);
         }
-        else System.err.println("Вольер полон");
+        else System.err.println("Вольер полон. Всего мест: " + maxAnimals);
     }
 
     public ArrayList<Animal> getAnimals() {
