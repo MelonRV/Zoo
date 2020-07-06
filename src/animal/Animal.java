@@ -1,12 +1,12 @@
 package animal;
 
-import Food.Food;
+import Food.FoodEnum;
 
 public abstract class Animal {
     String name;
 
 
-    public abstract void eat(Food food);
+    public abstract void eat(FoodEnum foodEnum);
 }
 
 
