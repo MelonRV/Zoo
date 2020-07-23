@@ -1,5 +1,4 @@
-package animal;
-
+package work.example.animal;
 
 
 public class Tiger extends Carnivorius {
