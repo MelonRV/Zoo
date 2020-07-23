@@ -1,4 +1,4 @@
-package Food;
+package work.example.Food;
 
 public class Сabbage {
 

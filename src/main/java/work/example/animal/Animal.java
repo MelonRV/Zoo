@@ -1,6 +1,6 @@
-package animal;
+package work.example.animal;
 
-import Food.FoodEnum;
+import work.example.Food.FoodEnum;
 
 public abstract class Animal {
     String name;

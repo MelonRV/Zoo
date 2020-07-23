@@ -1,6 +1,12 @@
-import Food.Chicken;
-import Food.FoodEnum;
-import animal.*;
+package work.example;
+
+import com.google.gson.Gson;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import work.example.Food.FoodEnum;
+import work.example.animal.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,6 +16,7 @@ public class Zoo {
     private List<Aviary> aviarys = new ArrayList<>();
 
     public static void main(String[] args) {
+
         Random random = new Random();
         Zoo zoo = new Zoo();
         Aviary herbivoreAviary = new Aviary(9);
@@ -53,6 +60,7 @@ public class Zoo {
 
 
 
+
         for (Aviary aviary : zoo.getAviarys()) {
             for (Animal animal : aviary.getAnimals()) {
                 int ram = random.nextInt(6);
@@ -60,6 +68,9 @@ public class Zoo {
             }
         }
 
+
+        Logger log = LogManager.getLogger(Zoo.class);
+        log.info(new Gson().toJson(zoo));
 
     }
 
@@ -70,4 +81,5 @@ public class Zoo {
     public List<Aviary> getAviarys() {
         return aviarys;
     }
+
 }
